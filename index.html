@@ -322,6 +322,26 @@ select{background-position:calc(100% - 18px) 19px,calc(100% - 13px) 19px}
 .chk{margin-top:8px;font-size:12.5px;gap:8px}.chk input{width:18px;height:18px}
 #submitBtn{margin-top:10px}
 .fnote{margin-top:8px;font-size:11.5px;line-height:1.35}
+
+/* v21 mentor above timer */
+.hero .wrap{gap:12px}
+.fac{gap:10px;padding:12px 14px;border-radius:18px}
+.fac .tag{font-size:11.5px}
+.fac-top{gap:14px}
+.fac-top img{width:84px;height:101px;border-radius:14px;border-width:2px;box-shadow:0 6px 16px rgba(0,0,0,.5);object-position:center top}
+.fac-top h3{font-size:17px}
+.fac-top .r{margin-top:4px;padding:3px 9px;font-size:11.5px}
+.fac-top p{margin-top:4px;font-size:12.5px;line-height:1.4}
+.stats{grid-template-columns:repeat(4,1fr);gap:6px}
+.st{padding:8px 2px;border-radius:10px}
+.st b{font-size:17px}.st span{font-size:10.5px;line-height:1.2;margin-top:2px}
+.fnote2{padding:7px 10px;font-size:12.5px;border-radius:10px}
+.offer{margin-top:0;padding:10px 12px}
+.orow{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:10px;margin-top:9px;padding-top:9px;border-top:1px dashed rgba(245,197,24,.35)}
+.orow .o1{margin:0;font-size:14px;text-align:left;white-space:nowrap}
+.orow .o2{margin:0;font:600 12px/1.25 Inter,sans-serif;color:var(--t);text-align:right;border-left:1.5px solid rgba(245,197,24,.5);padding-left:10px}
+@media(max-width:359px){.orow .o1{font-size:12.5px}.orow .o2{font-size:11px}.fac-top img{width:76px;height:92px}.st span{font-size:9.5px}}
+@media(min-width:760px){.hero .wrap{grid-template-columns:1.15fr .85fr}.offer{grid-column:1/-1}}
 </style>
 </head>
 <body>
@@ -344,15 +364,6 @@ select{background-position:calc(100% - 18px) 19px,calc(100% - 13px) 19px}
       <div class="pill"><span>📅</span><div>1st Batch<br>starts 5 Nov</div></div>
       <div class="pill urgent"><span>🔥</span><div><b>Hurry!</b><br>Only 5 students per batch</div></div>
     </div>
-    <div class="offer">
-      <div class="cdl" data-cdl>Diwali Offer Ends In</div>
-      <div class="cd" data-cd>
-        <div><b data-d>00</b><small>days</small></div><div><b data-h>00</b><small>hrs</small></div>
-        <div><b data-m>00</b><small>min</small></div><div><b data-s>00</b><small>sec</small></div>
-      </div>
-      <p class="o1"><span class="dy">🪔</span> <span>50% Discount</span> on course fee</p>
-      <p class="o2">Early enrolment offer</p>
-    </div>
   </div>
   <div class="fac" style="margin-top:0">
     <span class="tag" style="margin:0">Your mentor</span>
@@ -367,6 +378,14 @@ select{background-position:calc(100% - 18px) 19px,calc(100% - 13px) 19px}
       <div class="st"><b>IIT</b><span>Alumnus mentor</span></div>
     </div>
     <p class="fnote2">✅ All classes are taken by <b>Vikas Sir only</b></p>
+  </div>
+  <div class="offer">
+    <div class="cdl" data-cdl>Diwali Offer Ends In</div>
+    <div class="cd" data-cd>
+      <div><b data-d>00</b><small>days</small></div><div><b data-h>00</b><small>hrs</small></div>
+      <div><b data-m>00</b><small>min</small></div><div><b data-s>00</b><small>sec</small></div>
+    </div>
+    <div class="orow"><p class="o1"><span class="dy">🪔</span> <span>50% Discount</span> on course fee</p><p class="o2">Early enrolment offer</p></div>
   </div>
 </div></section>
 
